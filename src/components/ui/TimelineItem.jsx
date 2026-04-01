@@ -8,7 +8,7 @@ const typeColors = {
 };
 
 export default function TimelineItem({ item, index }) {
-  const { icon, title, titleEn, description, date, type } = item;
+  const { icon, title, titleEn, description, date, type, link, linkLabel } = item;
   const IconComponent = Icons[icon] || Icons.Circle;
   const isLeft = index % 2 === 0;
   const color = typeColors[type] || 'var(--accent)';
@@ -58,6 +58,25 @@ export default function TimelineItem({ item, index }) {
         <p style={{ fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.6 }}>
           {description}
         </p>
+        {link && (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-block',
+              marginTop: 8,
+              fontSize: 13,
+              fontWeight: 600,
+              color: color,
+              textDecoration: 'none',
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
+            onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
+          >
+            {linkLabel || 'View'} &rarr;
+          </a>
+        )}
       </div>
 
       {/* Dot */}
