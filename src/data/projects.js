@@ -1,0 +1,63 @@
+export const projects = [
+  {
+    id: 'meta-analysis',
+    title: '메타분석 자동화 도구',
+    titleEn: 'Meta-Analysis Automation Tool',
+    description:
+      'PICOS 기반 연구 질문 정의부터 문헌 검색, 스크리닝, 데이터 추출, 통계 분석, PRISMA 2020 보고서 생성까지 체계적 문헌고찰의 전 과정을 자동화하는 웹 애플리케이션',
+    tech: ['Python', 'Streamlit', 'SQLite', 'R', 'pandas', 'matplotlib'],
+    role: 'Solo',
+    roleKo: '1인 개발',
+    highlights: [
+      '6-Agent 순차 파이프라인',
+      '9개 외부 API 연동',
+      '83개 Python 파일',
+      '8종 통계 모델',
+    ],
+    color: '#6366f1',
+    github: null,
+    live: null,
+    docs: '/meta-analysis/index.html',
+    docsLabel: '사용 가이드',
+  },
+  {
+    id: 'changup',
+    title: '창업알리미',
+    titleEn: 'Changup Alarm',
+    description:
+      'K-Startup 정부지원사업 공고를 자동 수집하고, 사용자 맞춤 필터링과 마감 알림을 제공하는 웹 서비스. 현재 오픈 베타 운영 중.',
+    tech: ['Next.js 16', 'React 19', 'TypeScript', 'Supabase', 'Tailwind CSS'],
+    role: 'Solo',
+    roleKo: '1인 개발',
+    highlights: [
+      '실서비스 운영 중',
+      '카카오 OAuth 로그인',
+      'Cron 자동 수집',
+      '다크모드 / 반응형',
+    ],
+    color: '#10b981',
+    github: null,
+    live: 'https://www.changupalarm.co.kr',
+  },
+  {
+    id: 'restep',
+    title: 'ReStep',
+    titleEn: 'ReStep Healthcare',
+    description:
+      'AI 기반 재활 평가 자동화 헬스케어 앱. 스마트폰 영상 분석으로 10MWT, TUG, BBS 3가지 재활 평가를 자동 측정하여 고가 장비를 대체하고 환자당 7~11분 시간 절감.',
+    tech: ['AI Pose Estimation', 'Video Analysis', '10MWT', 'TUG', 'BBS'],
+    role: 'Team Leader',
+    roleKo: '팀 리더 (5인)',
+    highlights: [
+      '환자당 7-11분 절감',
+      '고가 장비 대체',
+      'AI 영상 보행 분석',
+      '낙상 위험도 판별',
+    ],
+    color: '#0ea5e9',
+    github: null,
+    live: null,
+    docs: '/restep-presentation.pdf',
+    docsLabel: '발표자료 PDF',
+  },
+];

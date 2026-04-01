@@ -1,0 +1,42 @@
+export const timeline = [
+  {
+    icon: 'GraduationCap',
+    title: '박사 과정',
+    titleEn: 'Ph.D. Program',
+    description: '물리치료학 박사 과정 — AI 기반 재활 평가 연구',
+    date: '2024 - Present',
+    type: 'education',
+  },
+  {
+    icon: 'Activity',
+    title: 'ReStep — Team Leader',
+    titleEn: 'ReStep — Team Leader',
+    description: 'AI 기반 재활 평가 자동화 헬스케어 프로젝트 (5인 팀 리더)',
+    date: '2024 - 2025',
+    type: 'project',
+  },
+  {
+    icon: 'Globe',
+    title: '창업알리미 — 1인 개발',
+    titleEn: 'Changup Alarm — Solo Dev',
+    description: 'K-Startup 정부지원사업 알림 서비스 기획, 개발, 운영',
+    date: '2025',
+    type: 'project',
+  },
+  {
+    icon: 'Database',
+    title: '메타분석 자동화 도구',
+    titleEn: 'Meta-Analysis Tool',
+    description: '체계적 문헌고찰 전 과정 자동화 풀스택 웹앱 개발',
+    date: '2025',
+    type: 'project',
+  },
+  {
+    icon: 'Heart',
+    title: '물리치료사',
+    titleEn: 'Physical Therapist',
+    description: '재활 치료 전문 — 임상 5년차',
+    date: '2021 - Present',
+    type: 'career',
+  },
+];
