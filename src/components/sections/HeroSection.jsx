@@ -86,7 +86,7 @@ export default function HeroSection() {
               fontStyle: 'italic',
             }}
           >
-            {profile.taglineEn}
+            {profile.taglineSub}
           </p>
         </motion.div>
 

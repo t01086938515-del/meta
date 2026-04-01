@@ -38,9 +38,19 @@ export default function Footer() {
           <Mail size={20} />
         </a>
       </div>
-      <p style={{ fontSize: 13, color: 'var(--text-muted)' }}>
+      <p style={{ fontSize: 13, color: 'var(--text-muted)', marginBottom: 6 }}>
         &copy; {new Date().getFullYear()} {profile.name}. Built with React + Vite.
       </p>
+      <a
+        href={profile.portfolioGithub}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ fontSize: 12, color: 'var(--accent)', textDecoration: 'none' }}
+        onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
+        onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
+      >
+        이 포트폴리오의 소스코드 보기 &rarr;
+      </a>
     </footer>
   );
 }

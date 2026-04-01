@@ -3,7 +3,7 @@ import { ExternalLink, GitBranch, FileText, User, Users } from 'lucide-react';
 import TechTag from './TechTag';
 
 export default function ProjectCard({ project }) {
-  const { title, titleEn, description, tech, role, roleKo, highlights, color, github, live, docs, docsLabel } = project;
+  const { title, titleEn, description, tech, techContext, role, roleKo, roleDetail, highlights, color, github, live, docs, docsLabel } = project;
 
   return (
     <motion.div
@@ -67,9 +67,23 @@ export default function ProjectCard({ project }) {
         <p style={{ fontSize: 13, color: 'var(--accent)', fontWeight: 500, marginBottom: 12 }}>
           {titleEn}
         </p>
-        <p style={{ fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: 16 }}>
+        <p style={{ fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: 12 }}>
           {description}
         </p>
+
+        {/* Role detail */}
+        {roleDetail && (
+          <p style={{ fontSize: 13, color: 'var(--accent)', marginBottom: 12, fontWeight: 500 }}>
+            담당: {roleDetail}
+          </p>
+        )}
+
+        {/* Tech context */}
+        {techContext && (
+          <p style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 16, fontStyle: 'italic', lineHeight: 1.6 }}>
+            {techContext}
+          </p>
+        )}
 
         {/* Highlights */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 16 }}>

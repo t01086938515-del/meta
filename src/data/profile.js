@@ -4,7 +4,7 @@ export const profile = {
   role: '박사 과정 대학원생 · 물리치료사 · AI 개발자',
   roleEn: 'Ph.D. Student · Physical Therapist · AI Developer',
   tagline: '임상과 기술을 잇는 물리치료사 개발자',
-  taglineEn: 'Bridging Clinical Practice and Technology',
+  taglineSub: '재활 현장의 문제를 코드로 해결합니다',
 
   // ============================================
   // ★ 아래 자기소개를 원하는 내용으로 수정하세요 ★
@@ -26,10 +26,12 @@ that bridge the gap between clinical practice and technology.`,
     github: 'https://github.com/t01086938515-del',
   },
 
+  portfolioGithub: 'https://github.com/t01086938515-del/meta',
+
   highlights: [
     { number: '5+', label: '임상 경력 (년)', labelEn: 'Years Clinical' },
-    { number: '3', label: '프로젝트', labelEn: 'Projects' },
-    { number: '83+', label: 'Python 파일', labelEn: 'Python Files' },
-    { number: '9', label: 'API 연동', labelEn: 'API Integrations' },
+    { number: '3', label: '개발 프로젝트', labelEn: 'Dev Projects' },
+    { number: '1', label: '실서비스 운영', labelEn: 'Live Service' },
+    { number: '51', label: '논문 자동 선정', labelEn: 'Papers Selected' },
   ],
 };
